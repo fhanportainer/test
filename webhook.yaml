@@ -1,7 +1,7 @@
 version: '3'
 services:
  webhook-env:
-  image: nginx:${myvar:latest}
+  image: nginx:${myvar:-latest}
   tty: true
   stdin_open: true
   environment:
